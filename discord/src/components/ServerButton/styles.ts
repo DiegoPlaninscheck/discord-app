@@ -5,7 +5,7 @@ import { Props } from '.';
 
 export const Button = styled.button<Props>`
     display: flex;
-    align-intems: center;
+    align-items: center;
     justify-content: center;
     flex-shrink: 0;
 
@@ -14,7 +14,7 @@ export const Button = styled.button<Props>`
     border-radius: 50%;
 
     margin-bottom: 8px;
-    background-color: ${(props) => props.isHome ? 'var(--rocketseat)' : 'var(--primary)'};
+    background-color: ${props => props.isHome ? 'var(--rocketseat)' : 'var(--primary)'};
     position: relative;
     cursor: pointer;
 
@@ -63,7 +63,7 @@ export const Button = styled.button<Props>`
 
     transition: border-radius .2s, background-color .2s;
 
-    &.active, &.hover{
+    &.active, &:hover{
         border-radius: 16px;
         background-color: ${(props) => props.isHome ? 'var(--rocketseat)' : 'var(--discord)'}
     }
