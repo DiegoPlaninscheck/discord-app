@@ -6,7 +6,7 @@ const ChannelInfo: React.FC = () => {
     return( 
     <Container>
         <HashtagIcon/>
-        <Title>chat-Livre</Title>
+        <Title>chat-livre</Title>
         <Separator/>
         <Description>Canal aberto para conversas</Description>
     </Container>
